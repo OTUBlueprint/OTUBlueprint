@@ -11,7 +11,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        'blueprint-blue': 'rgb(5, 115, 232)'
+        blue: 'rgb(5, 115, 232)'
       },
     },
   },

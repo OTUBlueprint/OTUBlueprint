@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
     return (
-        <header className="bg-blueprint-blue sticky top-0">
+        <header className="bg-blue sticky top-0">
             <nav className="content flex flex-wrap space-x-4 lg:space-x-0 lg:justify-between pt-5 md:pt-6 pb-2 md:pb-6 box-border">
                 <div className="flex flex-col justify-center">
                     <a href="/">

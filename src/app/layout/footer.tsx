@@ -4,7 +4,7 @@ export default function Footer() {
     const date = new Date();
 
     return (
-        <footer className="w-full bg-blueprint-blue md:bg-gradient-to-r md:from-blue md:to-sky-500">
+        <footer className="w-full bg-blue md:bg-gradient-to-r md:from-blue md:to-sky-500">
             <div className="content relative z-10 flex flex-col items-center space-y-20 mx-auto pt-14 pb-6">
                 <div className="w-full flex flex-col md:flex-row justify-between items-stretch space-y-24 md:space-y-0 md:space-x-20 mt-4">
                     <div className="flex flex-col space-y-5">
