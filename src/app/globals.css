@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 :root {
-    --background: #3b82f6; /* blue-500 */
-    --foreground: #ededed;
+    --background: #0573e8; /* blue-500 */
+    --foreground: #ffffff;
+    --navbar-text-hover: 
 }
 
 * {
@@ -15,8 +16,8 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #1e3a8a; /* blue-900 */
-        --foreground: #a5a7a9;
+        --background: #0573e8; /* blue-900 */
+        --foreground: #ffffff;
     }
 }
 

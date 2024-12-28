@@ -21,11 +21,11 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="flex flex-col md:ml-3 lg:ml-0 space-y-2 md:flex-row md:space-x-4 md:space-y-0">
-                                <Link href="" className="hover:opacity-100">
+                                <Link href="/projects" className="hover:opacity-100">
                                     <Button text="See our work" />
                                 </Link>
-                                <Link href="" className="hover:opacity-100">
-                                    <Button text="See our work" />
+                                <Link href="/join" className="hover:opacity-100">
+                                    <Button text="Join our team" />
                                 </Link>
                             </div>
                         </div>
