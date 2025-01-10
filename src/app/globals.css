@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/*:root {*/
-/*    --background: #0573e8; !* blue-500 *!*/
-/*    --foreground: #ffffff;*/
-/*    --navbar-text-hover: */
-/*}*/
+:root {
+    /*--background: #0573e8; !* blue-500 *!*/
+    /*--foreground: #ffffff;*/
+    --font-inter: 'Inter', sans-serif;
+}
 
 * {
     box-sizing: border-box;
@@ -22,5 +22,30 @@
 /*}*/
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+h1 {
+    font-family: var(--font-inter);
+    font-weight: 700;
+    font-size: clamp(3rem, 5vw, 5rem);
+}
+
+h2 {
+    font-family: var(--font-inter);
+    font-weight: 700;
+    font-size: clamp(2rem, 3vw, 4rem);
+}
+
+h2 {
+    font-family: var(--font-inter);
+    font-weight: 700;
+    font-size: clamp(1rem, 2vw, 3rem);
+}
+
+.icon {
+    width: clamp(4rem, 8vw, 8rem);
+    height: clamp(4rem, 8vw, 8rem);
 }

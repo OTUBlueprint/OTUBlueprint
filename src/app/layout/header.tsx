@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import NavBar from "../components/NavBar";
 import Logo from "@/logos/blueprint-logo-with-text.svg";

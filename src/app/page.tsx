@@ -22,7 +22,7 @@ export default function Home() {
                 <div className="max-w-screen-lg">
                     <h1 className="text-blue capitalize">
                         Who are we
-                        <hr className="w-20 h-0.5 bg-blue" />
+                        <hr className="w-48 h-2 bg-blue mx-auto" />
                     </h1>
                     <p className="my-4">
                         We are a group of students at Ontario Tech University that are dedicate to developing technology
@@ -37,7 +37,7 @@ export default function Home() {
                         <div className="pt-3 px-5 border-r-2 border-blue">
                             <h1 className="text-blue capitalize">
                                 Are you interested in our services?
-                                <hr className="w-20 h-0.5 bg-blue" />
+                                <hr className="w-48 h-2 bg-blue mx-auto" />
                             </h1>
                             <p className="my-4 text-center">
                                 Our team of skilled product managers, project leaders, designers, and developers is here
@@ -47,7 +47,7 @@ export default function Home() {
                         <div className="pt-3 px-5 border-l-2 border-blue">
                             <h1 className="text-blue capitalize">
                                 Want to help make a real world impct?
-                                <hr className="w-20 h-0.5 bg-blue" />
+                                <hr className="w-48 h-2 bg-blue mx-auto" />
                             </h1>
                             <p className="my-4 text-center">
                                 Ready to make an impact? Learn how to create professional products that drive real world
