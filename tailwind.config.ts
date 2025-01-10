@@ -9,10 +9,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
         blue: 'rgb(5, 115, 232)'
       },
+      backgroundImage: {
+        // 'project-pattern': "url('/assets/')",
+      }
     },
   },
   plugins: [],
