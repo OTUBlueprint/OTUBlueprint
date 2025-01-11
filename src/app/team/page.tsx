@@ -1,4 +1,8 @@
+import { Fragment } from "react";
 import TeamMember from "../components/TeamMember";
+import InternalPageHeader from "../components/InternalPageHeader";
+import Diamonds from "@/logos/Diamonds.svg";
+
 
 const teamMembers = [
   { src: '/team/IbisPaintedEdges.jpeg', name: 'Jaime Williams', role: 'President', rank: 1 },
@@ -35,28 +39,55 @@ export default function Team() {
   };
 
   return (
-    <div className="bg-white p-10">
-      <div className="flex flex-col items-center">
-        <p className="text-blue text-3xl">Meet the Team</p>
-        <div className="w-24 mt-2 border border-blue" />
-      </div>
-      {Object.entries(groupedMembers).map(([rank, members]) => (
-        <div key={rank} className="my-10">
-          <h2 className="text-xl font-semibold text-blue md:text-center">{rankTitles[rank]}</h2>
-          <div className="flex flex-wrap justify-center p-8 md:p-20 gap-8 md:gap-12 md:max-w-6xl mx-auto">
-            {members.map((member, index) => (
-              <div className="flex justify-center w-32 md:w-40">
-                <TeamMember 
-                  key={index}
-                  src={member.src}
-                  name={member.name}
-                  role={member.role || ""}
-                />
-              </div>
-            ))}
-          </div>
+    <Fragment>
+      <InternalPageHeader imageSrc="team/TeamPhoto.png" imageAlt="Photo of people yapping." title="Our Team" align="left">
+        OTU Blueprint is a team of students devoted to serving their community, using their technological expertise to bring that mission to life.
+      </InternalPageHeader>
+      <div className="bg-white p-10 relative">
+        <div className="flex flex-col items-center">
+          <p className="text-blue text-3xl">Meet the Team</p>
+          <div className="w-24 mt-2 border border-blue" />
         </div>
-      ))}
-    </div>
+        {Object.entries(groupedMembers).map(([rank, members]) => (
+          <div key={rank} className="my-10">
+            <h2 className="text-xl font-semibold text-blue md:text-center">{rankTitles[rank]}</h2>
+            <div className="flex flex-wrap justify-center p-8 md:p-20 gap-8 md:gap-12 md:max-w-6xl mx-auto">
+              {members.map((member, index) => (
+                <div className="flex justify-center w-32 md:w-40">
+                  <TeamMember 
+                    key={index}
+                    src={member.src}
+                    name={member.name}
+                    role={member.role || ""}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+        {/* Vector Graphics in Each Corner */}
+        <div className="absolute top-0 left-0 p-4">
+          <Diamonds />
+        </div>
+        <div className="absolute top-0 right-0 p-4">
+          <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+            {/* Add your vector graphic path or shape here */}
+            <circle cx="25" cy="25" r="20" stroke="black" strokeWidth="3" fill="white" />
+          </svg>
+        </div>
+        <div className="absolute bottom-0 left-0 p-4">
+          <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+            {/* Add your vector graphic path or shape here */}
+            <circle cx="25" cy="25" r="20" stroke="black" strokeWidth="3" fill="white" />
+          </svg>
+        </div>
+        <div className="absolute bottom-0 right-0 p-4">
+          <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+            {/* Add your vector graphic path or shape here */}
+            <circle cx="25" cy="25" r="20" stroke="black" strokeWidth="3" fill="white" />
+          </svg>
+        </div>
+      </div>
+    </Fragment>
   );
 }

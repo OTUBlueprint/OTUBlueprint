@@ -5,7 +5,7 @@ import Section from "@/app/components/Section";
 export default function Projects() {
     return (
         <Fragment>
-            <InternalPageHeader imageSrc="projectteam.png" imageAlt="People working on project" title="Projects" align="left">
+            <InternalPageHeader imageSrc="assets/projectteam.png" imageAlt="People working on project" title="Projects" align="left">
                 At OTU Blueprint, we value transparency and accessibility, which is why all of our work is open source.
                 We strive to develop technology that strengthens connections and promotes inclusivity within the community.
             </InternalPageHeader>
