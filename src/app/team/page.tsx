@@ -1,32 +1,62 @@
 import TeamMember from "../components/TeamMember";
 
 const teamMembers = [
-  { src: '/team/IbisPaintedEdges.jpeg', name: 'Tyler Blevins', role: 'President' },
-  { src: '/team/IbisPaintedEdges.jpeg', name: 'Toby Fox', role: 'Vice-President' },
-  { src: '/team/IbisPaintedEdges.jpeg', name: 'Alice Johnson', role: 'VP of Engineering' },
-  { src: '/team/IbisPaintedEdges.jpeg', name: 'Bob Brown', role: 'Developer' },
-  { src: '/team/IbisPaintedEdges.jpeg', name: 'Steve Jobs', role: 'Designer' },
+  { src: '/team/IbisPaintedEdges.jpeg', name: 'Jaime Williams', role: 'President', rank: 1 },
+  { src: '/team/IbisPaintedEdges.jpeg', name: 'James Smith', role: 'Vice-President', rank: 1 },
+  { src: '/team/IbisPaintedEdges.jpeg', name: 'Kendrick Jaqui', role: 'VP of Engineering', rank: 1 },
+  { src: '/team/IbisPaintedEdges.jpeg', name: 'Pick Carup', role: 'VP of Internal Communications', rank: 1 },
+  { src: '/team/IbisPaintedEdges.jpeg', name: 'Brandon Sami', role: 'Lead Designer', rank: 2 },
+  { src: '/team/IbisPaintedEdges.jpeg', name: 'Jevante Banso', role: 'Designer', rank: 2 },
+  { src: '/team/IbisPaintedEdges.jpeg', name: 'Toby Fox', role: 'Designer', rank: 2 },
+  { src: '/team/IbisPaintedEdges.jpeg', name: 'Alice Johnson', rank: 2 },
+  { src: '/team/IbisPaintedEdges.jpeg', name: 'Bob Brown', rank: 2 },
+  { src: '/team/IbisPaintedEdges.jpeg', name: 'Steve Jobs', role: 'Designer', rank: 2 },
+  { src: '/team/IbisPaintedEdges.jpeg', name: 'Alice Johnson', rank: 2 },
+  { src: '/team/IbisPaintedEdges.jpeg', name: 'Bob Brown', rank: 2 },
+  { src: '/team/IbisPaintedEdges.jpeg', name: 'Steve Jobs', rank: 2 },
+  { src: '/team/IbisPaintedEdges.jpeg', name: 'Alice Johnson', rank: 2 },
+  { src: '/team/IbisPaintedEdges.jpeg', name: 'Bob Brown', rank: 2 },
+  { src: '/team/IbisPaintedEdges.jpeg', name: 'Steve Wilkerwilson-Jamers', rank: 2 },
 ];
 
+function groupByRank(members) {
+  return members.reduce((acc, member) => {
+    if (!acc[member.rank]) acc[member.rank] = [];
+    acc[member.rank].push(member);
+    return acc;
+  }, {});
+}
+
 export default function Team() {
+  const groupedMembers = groupByRank(teamMembers);
+  const rankTitles = {
+    1: 'Executive Team',
+    2: 'Developer',
+  };
+
   return (
     <div className="bg-white p-10">
       <div className="flex flex-col items-center">
         <p className="text-blue text-3xl">Meet the Team</p>
         <div className="w-24 mt-2 border border-blue" />
       </div>
-      <div className="flex flex-wrap justify-center p-8 md:p-20 gap-8 md:gap-12">
-        {teamMembers.map((member, index) => (
-          <div key={index}>
-            <TeamMember 
-              key={index}
-              src={member.src}
-              name={member.name}
-              role={member.role}
-            />
+      {Object.entries(groupedMembers).map(([rank, members]) => (
+        <div key={rank} className="my-10">
+          <h2 className="text-xl font-semibold text-blue md:text-center">{rankTitles[rank]}</h2>
+          <div className="flex flex-wrap justify-center p-8 md:p-20 gap-8 md:gap-12 md:max-w-6xl mx-auto">
+            {members.map((member, index) => (
+              <div className="flex justify-center w-32 md:w-40">
+                <TeamMember 
+                  key={index}
+                  src={member.src}
+                  name={member.name}
+                  role={member.role || ""}
+                />
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 }
