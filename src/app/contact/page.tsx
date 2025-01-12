@@ -4,10 +4,10 @@ import InstagramLogo from "@/logos/instagram-logo.svg"
 import DiscordLogo from "@/logos/discord-logo.svg"
 
 const Contact = () => (
-  <div className='md:flex items-center justify-center min-h-[calc(80vh)] p-4'>
+  <div className='md:flex items-center justify-center h-screen p-4 bg-blue text-white'>
     <div className='max-w-prose flex flex-col m-4 gap-4 md:gap-8 md:justify-center'>
       <p className="font-semibold text-2xl md:text-4xl">Get in Touch!</p>
-      <p className="text-lg md:text-2xl md:ml-6">
+      <p className="text-lg md:text-2xl md:ml-6 lg:w-2/3">
         Have a question? Curious about the club, a potential project, 
         or just want to connect with a Blueprint executive?
         Don't hesitate to reach out to us!

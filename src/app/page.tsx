@@ -6,7 +6,7 @@ import Logo from "@/logos/blueprint-logo-with-text.svg";
 export default function Home() {
     return (
         <Fragment>
-            <section className="w-full flex h-dvh">
+            <section className="w-full flex h-dvh border-b">
                 <div className="w-1/2 flex flex-col justify-center px-12">
                     {/* TODO: add the image */}
                 </div>
@@ -19,36 +19,36 @@ export default function Home() {
                 </div>
             </section>
             <section className="flex flex-row justify-center py-12">
-                <div className="max-w-screen-lg">
-                    <h1 className="text-blue capitalize">
-                        Who are we
-                        <hr className="w-48 h-2 bg-blue mx-auto" />
-                    </h1>
-                    <p className="my-4">
+                <div className="max-w-screen-lg px-4">
+                    <div className="flex flex-col items-center">
+                        <p className="text-blue text-5xl">Who We Are</p>
+                        <div className="w-24 mt-2 border border-blue" />
+                    </div>
+                    <p className="my-4 text-lg">
                         We are a group of students at Ontario Tech University that are dedicate to developing technology
                         based solutions for nonprofit organizations.
                     </p>
-                    <Button background="blue" colour="white">Meet our Team</Button>
+                    <Link href="/team" className=""><Button background="blue" colour="white">Meet our Team</Button></Link>
                 </div>
             </section>
             <section className="flex flex-row justify-center py-12">
                 <div className="max-w-screen-lg">
                     <div className="flex flex-row">
                         <div className="pt-3 px-5 border-r-2 border-blue">
-                            <h1 className="text-blue capitalize">
-                                Are you interested in our services?
-                                <hr className="w-48 h-2 bg-blue mx-auto" />
-                            </h1>
+                            <div className="flex flex-col items-center text-center">
+                                <p className="text-blue text-5xl">Interested In Our Services?</p>
+                                <div className="w-24 mt-2 border border-blue" />
+                            </div>
                             <p className="my-4 text-center">
                                 Our team of skilled product managers, project leaders, designers, and developers is here
                                 to help your organization grow with creative solutions.
                             </p>
                         </div>
                         <div className="pt-3 px-5 border-l-2 border-blue">
-                            <h1 className="text-blue capitalize">
-                                Want to help make a real world impct?
-                                <hr className="w-48 h-2 bg-blue mx-auto" />
-                            </h1>
+                            <div className="flex flex-col items-center text-center">
+                                <p className="text-blue text-5xl">Want to help?</p>
+                                <div className="w-24 mt-2 border border-blue" />
+                            </div>
                             <p className="my-4 text-center">
                                 Ready to make an impact? Learn how to create professional products that drive real world
                                 change and jumpstart your career with UW Blueprint!
@@ -56,7 +56,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="flex justify-center mt-6">
-                        <Button background="blue" colour="white">Get in touch with us!</Button>
+                        <Link href="/contact" className=""><Button background="blue" colour="white">Contact</Button></Link>
                     </div>
                 </div>
             </section>
