@@ -1,8 +1,6 @@
 import { Fragment } from "react";
 import TeamMember from "../components/TeamMember";
 import InternalPageHeader from "../components/InternalPageHeader";
-import Diamonds from "@/logos/Diamonds.svg";
-
 
 const teamMembers = [
   { src: '/team/IbisPaintedEdges.jpeg', name: 'Jaime Williams', role: 'President', rank: 1 },
@@ -67,25 +65,16 @@ export default function Team() {
         ))}
         {/* Vector Graphics in Each Corner */}
         <div className="absolute top-0 left-0 p-4">
-          <Diamonds />
+          <img src="team/Diamonds.svg" className="w-32 lg:w-64 rotate-180" />
         </div>
-        <div className="absolute top-0 right-0 p-4">
-          <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-            {/* Add your vector graphic path or shape here */}
-            <circle cx="25" cy="25" r="20" stroke="black" strokeWidth="3" fill="white" />
-          </svg>
+        <div className="absolute top-0 right-0">
+          <img src="team/TopRight.svg" className="w-32 lg:w-64" />
         </div>
-        <div className="absolute bottom-0 left-0 p-4">
-          <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-            {/* Add your vector graphic path or shape here */}
-            <circle cx="25" cy="25" r="20" stroke="black" strokeWidth="3" fill="white" />
-          </svg>
+        <div className="absolute bottom-0 left-0">
+          <img src="team/BottomLeft.svg" className="w-32 lg:w-64" />
         </div>
         <div className="absolute bottom-0 right-0 p-4">
-          <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
-            {/* Add your vector graphic path or shape here */}
-            <circle cx="25" cy="25" r="20" stroke="black" strokeWidth="3" fill="white" />
-          </svg>
+          <img src="team/Diamonds.svg" className="w-32 lg:w-64" />
         </div>
       </div>
     </Fragment>
