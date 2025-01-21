@@ -52,7 +52,7 @@ export default function Team() {
             <div className="flex flex-wrap justify-center p-8 md:p-20 gap-8 md:gap-12 md:max-w-6xl mx-auto">
               {members.map((member, index) => (
                 <div className="flex justify-center w-32 md:w-40">
-                  <TeamMember 
+                  <TeamMember
                     key={index}
                     src={member.src}
                     name={member.name}
