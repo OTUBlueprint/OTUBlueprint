@@ -5,7 +5,7 @@
 :root {
     /*--background: #0573e8; !* blue-500 *!*/
     /*--foreground: #ffffff;*/
-    --font-inter: 'Inter', sans-serif;
+    --font-poppins: 'Poppins', serif;
 }
 
 * {
@@ -22,27 +22,39 @@
 /*}*/
 
 body {
-    font-family: var(--font-inter);
+    font-family: var(--font-poppins);
     font-weight: 400;
-    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-size: clamp(1rem, 1vw, 1.5rem);
 }
 
 h1 {
-    font-family: var(--font-inter);
+    font-family: var(--font-poppins);
     font-weight: 700;
-    font-size: clamp(3rem, 5vw, 5rem);
+    font-size: clamp(3rem, 4vw, 5rem);
 }
 
 h2 {
-    font-family: var(--font-inter);
+    font-family: var(--font-poppins);
     font-weight: 700;
     font-size: clamp(2rem, 3vw, 4rem);
 }
 
-h2 {
-    font-family: var(--font-inter);
+h3 {
+    font-family: var(--font-poppins);
     font-weight: 700;
     font-size: clamp(1rem, 2vw, 3rem);
+}
+
+h5 {
+    font-family: var(--font-poppins);
+    font-weight: 700;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+p, a, li {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: clamp(1rem, 1vw, 1.5rem);
 }
 
 .icon {
