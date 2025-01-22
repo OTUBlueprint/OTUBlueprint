@@ -25,8 +25,8 @@ const Contact = () => (
         </Link>
       </div>
     </div>
-    <div>
-      <p>Image will go here.</p>
+    <div className="flex flex-row justify-center items-center max-w-md">
+      <img className="w-auto h-auto object-cover" src="assets/chat.svg" alt="Contact us" />
     </div>
   </div>
 );

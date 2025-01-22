@@ -11,9 +11,6 @@ export default {
       colors: {
         blue: 'rgb(5, 115, 232)'
       },
-      backgroundImage: {
-        // 'project-pattern': "url('/assets/')",
-      }
     },
   },
   plugins: [],

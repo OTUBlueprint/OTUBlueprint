@@ -10,20 +10,17 @@ export default function Footer() {
                 <div className="flex flex-col gap-2 md:flex-row md:gap-4">
                     <p className="font-bold md:hidden">Pages</p>
                     <Link href="/about" className="hover:text-sky-200">
-                        <h5>About</h5>
+                        About
                     </Link>
                     <Link href="/projects" className="hover:text-sky-200">
-                        <h5>Projects</h5>
+                        Projects
                     </Link>
                     <Link href="/team" className="hover:text-sky-200">
-                        <h5>Team</h5>
+                        Team
                     </Link>
                     <Link href="/contact" className="hover:text-sky-200">
-                        <h5>Contact</h5>
+                        Contact
                     </Link>
-                </div>
-                <div className="w-auto h-auto">
-                    {/* TODO: Add the image */}
                 </div>
                 <div className="flex justify-center items-center gap-4 flex-col md:flex-row">
                     <div className="hidden lg:flex flex-row gap-x-3">
