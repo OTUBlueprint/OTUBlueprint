@@ -11,6 +11,9 @@ export default {
       colors: {
         blue: 'rgb(5, 115, 232)'
       },
+      screens: {
+        'lg': '1280px'
+      }
     },
   },
   plugins: [],

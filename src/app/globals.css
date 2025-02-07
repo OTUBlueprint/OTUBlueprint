@@ -54,7 +54,7 @@ h5 {
 p, a, li {
     font-family: var(--font-poppins);
     font-weight: 400;
-    font-size: clamp(1rem, 1vw, 1.5rem);
+    font-size: clamp(1rem, 1.8vw, 1.5rem);
 }
 
 .icon {
