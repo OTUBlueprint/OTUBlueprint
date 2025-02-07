@@ -1,6 +1,7 @@
 import {Fragment} from "react";
 import TeamMember from "../components/TeamMember";
 import InternalPageHeader from "../components/InternalPageHeader";
+import Section from "@/app/components/Section";
 
 const teamMembers = [
     {src: '/team/IbisPaintedEdges.jpeg', name: 'Jaime Williams', role: 'President', rank: 1},
@@ -44,14 +45,10 @@ export default function Team() {
                     expertise to bring that mission to life.
                 </p>
             </InternalPageHeader>
-            <div className="bg-white p-10 relative">
-                <div className="flex flex-col items-center">
-                    <p className="text-blue text-3xl">Meet the Team</p>
-                    <div className="w-24 mt-2 border border-blue"/>
-                </div>
+            <Section heading="Meet the Team" background="meet_team_section.svg">
                 {Object.entries(groupedMembers).map(([rank, members]) => (
                     <div key={rank} className="my-10">
-                        <h2 className="text-xl font-semibold text-blue md:text-center">{rankTitles[rank]}</h2>
+                        <h2 className="font-semibold text-blue md:text-center">{rankTitles[rank]}</h2>
                         <div className="flex flex-wrap justify-center p-8 md:p-20 gap-8 md:gap-12 md:max-w-6xl mx-auto">
                             {members.map((member, index) => (
                                 <div className="flex justify-center w-32 md:w-40">
@@ -66,19 +63,7 @@ export default function Team() {
                         </div>
                     </div>
                 ))}
-                <div className="absolute top-0 left-0 p-4">
-                    <img src="team/Diamonds.svg" className="w-32 lg:w-64 rotate-180"/>
-                </div>
-                <div className="absolute top-0 right-0">
-                    <img src="team/TopRight.svg" className="w-32 lg:w-64"/>
-                </div>
-                <div className="absolute bottom-0 left-0">
-                    <img src="team/BottomLeft.svg" className="w-32 lg:w-64"/>
-                </div>
-                <div className="absolute bottom-0 right-0 p-4">
-                    <img src="team/Diamonds.svg" className="w-32 lg:w-64"/>
-                </div>
-            </div>
+            </Section>
         </Fragment>
     );
 }
