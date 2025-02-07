@@ -3,7 +3,7 @@ export default function Button(props) {
     const colour = props.colour || 'white';
 
     return (
-        <button className={`bg-${background} text-${colour} rounded-xl p-3`}>
+        <button className={`bg-${background} text-${colour} rounded-xl p-3 ${props.className}`}>
             { props.children }
         </button>
     )

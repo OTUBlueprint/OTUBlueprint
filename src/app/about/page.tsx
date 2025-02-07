@@ -33,7 +33,7 @@ export default function About() {
                 <p className="text-white md:text-lg">Bringing technology within reach to empower those who build and support communities.</p>
                 <Button className="mt-4" background="white" colour="blue">Check out our Work</Button>
             </InternalPageHeader>
-            <Section heading="Who are we">
+            <Section heading="Who are we" background="about_who_are_we_section.svg">
                 <div className="flex flex-col items-center mt-6 gap-y-4">
                     <h5 className="text-blue font-bold text-center">Tech for Good</h5>
                     <p>
@@ -42,7 +42,7 @@ export default function About() {
                     </p>
                 </div>
             </Section>
-            <Section heading="What we do">
+            <Section heading="What we do" background="about_who_are_we_section.svg">
                 <div className="flex flex-col items-center mt-6 gap-y-4">
                     <h5 className="text-blue font-bold text-center">Pro bono tech solutions for nonprofits</h5>
                     <p>
@@ -51,7 +51,7 @@ export default function About() {
                     </p>
                 </div>
             </Section>
-            <Section heading="What is Blueprint">
+            <Section heading="What is Blueprint" background="about_who_are_we_section.svg">
                 <div className="flex flex-col items-center mt-6 gap-y-4">
                     <h5 className="text-blue font-bold text-center">Serving Communities Across Universities</h5>
                     <p>
@@ -61,11 +61,11 @@ export default function About() {
                     <Button background="blue" colour="white">Learn more</Button>
                 </div>
             </Section>
-            <Section heading="Our Values">
-                <div className="flex flex-row justify-start mt-6 gap-x-4">
+            <Section heading="Our Values" background="about_who_are_we_section.svg">
+                <div className="flex flex-col justify-start mt-6 gap-4 md:flex-row">
                     {values.map(value => {
                         return(
-                            <div className="w-3/12 flex flex-col items-center gap-y-4 px-3">
+                            <div className="w-full flex flex-col items-center gap-y-4 px-3 md:w-1/2 lg:w-3/12">
                                 <img className="icon object-cover" src={value.image} alt="Project tools icon" />
                                 <h5 className="text-blue">{value.title}</h5>
                                 <p className="text-center">
@@ -76,9 +76,9 @@ export default function About() {
                     })}
                 </div>
             </Section>
-            <Section heading="Sponsors">
+            <Section heading="Sponsors" background="about_who_are_we_section.svg">
                 <div className="flex flex-col items-center mt-6 gap-y-4">
-                    <img className="icon object-cover" src="/assets/sponsors_icon.svg" alt="Project tools icon" />
+                    <img className="icon object-contain" src="/assets/sponsors_icon.svg" alt="Project tools icon" />
                     <p className="text-center">
                         We are currently seeking sponsors. If you are interested, please get in touch with us.
                     </p>

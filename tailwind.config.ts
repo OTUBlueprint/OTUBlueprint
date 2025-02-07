@@ -12,6 +12,7 @@ export default {
         blue: 'rgb(5, 115, 232)'
       },
       screens: {
+        'xs': '320px',
         'lg': '1280px'
       }
     },
