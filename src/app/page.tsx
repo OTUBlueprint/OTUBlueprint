@@ -9,7 +9,7 @@ export default function Home() {
         <Fragment>
             <section className="w-full flex flex-col h-dvh md:flex-row md:h-[32rem] lg:h-dvh">
                 <div className="w-full h-full flex flex-col justify-center px-12 md:w-1/2 md:h-auto">
-                    <img className="w-auto h-auto object-cover" src="assets/otu_building.png" alt="Ontario Tech University Building" />
+                    <img className="w-auto h-auto object-cover" src="assets/otu_building.jpg" alt="Ontario Tech University Building" />
                 </div>
                 <div className="w-full h-full bg-blue flex flex-col justify-center items-center px-12 md:w-1/2 md:h-auto">
                     <div className="w-auto h-auto">

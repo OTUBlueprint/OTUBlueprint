@@ -1,4 +1,4 @@
-import {Fragment} from "react";
+import { Fragment } from "react";
 import InternalPageHeader from "@/app/components/InternalPageHeader";
 import Section from "@/app/components/Section";
 
@@ -17,6 +17,12 @@ export default function Projects() {
                     <p className="text-center">
                         We're excited to be working on some amazing projects. Stay tuned for updates as we bring them to life!
                     </p>
+                </div>
+                <div className="flex justify-center items-center mt-10">
+                    <div className="bg-blue-600 text-blue p-6 rounded-lg shadow-lg text-center w-full max-w-md border-2 border-blue-600">
+                        <h3 className="font-bold text-xl mb-2">Project NINE</h3>
+                        <p className="text-lg">Stay tuned for more updates!</p>
+                    </div>
                 </div>
             </Section>
         </Fragment>
